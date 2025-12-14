@@ -1,5 +1,5 @@
 {
-  "name": "dericer-core",
+  "name": "personal-finance-core",
   "version": "0.1.0",
   "description": "Local-first personal finance core library with hexagonal architecture.",
   "main": "dist/index.js",
@@ -10,8 +10,9 @@
     "lint": "eslint src --ext .ts",
     "test": "vitest"
   },
+  "license": "MIT",
   "devDependencies": {
-    "@types/node": "^25.0.2",
-    "typescript": "^5.6.0"
+    "typescript": "^5.6.0",
+    "@types/node": "^22.0.0"
   }
 }
