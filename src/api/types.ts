@@ -102,3 +102,10 @@ export interface TransactionQueryResult {
     totalCount: number;
     totalAmountMinor?: number;
 }
+
+export interface BudgetStatusDTO {
+    budget: BudgetDTO;
+    spentMinor: number;
+    remainingMinor: number;
+    percentUsed: number;
+}
