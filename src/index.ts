@@ -17,4 +17,4 @@ export * from "./api/core.js";
 export * from "./api/export.js";
 
 export * from "./adapters/json-file-storage.js";
-export * from "./ports/system-time-port.js";
+export * from "./adapters/system-time-port.js";

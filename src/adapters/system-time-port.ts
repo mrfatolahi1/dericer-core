@@ -1,5 +1,5 @@
-import { TimePort } from "./time-port.js";
-import { ISODateTimeString } from "../shared/types.js";
+import { TimePort } from "../ports/time-port";
+import { ISODateTimeString } from "../shared/types";
 
 export class SystemTimePort implements TimePort {
     now(): ISODateTimeString {
