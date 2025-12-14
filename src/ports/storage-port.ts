@@ -1,34 +1,47 @@
-import { Account } from "../domain/account.js";
-import { Transaction } from "../domain/transaction.js";
-import { Category } from "../domain/category.js";
-import { Budget } from "../domain/budget.js";
-import { Goal } from "../domain/goal.js";
+import {
+    AccountId,
+    BudgetId,
+    CategoryId,
+    GoalId,
+    TransactionId
+} from "../shared/types.js";
+import { Account } from "../domain/accounts/account.js";
+import { Transaction } from "../domain/transactions/transaction.js";
+import { Category } from "../domain/categories/category.js";
+import { Budget } from "../domain/budgets/budget.js";
+import { Goal } from "../domain/goals/goal.js";
 import { CurrencyConfig } from "../shared/money.js";
 
-/**
- * StoragePort defines the persistence operations that the core needs.
- * Core code will never depend on the implementation details.
- */
 export interface StoragePort {
     loadAllAccounts(): Promise<Account[]>;
 
     saveAccount(account: Account): Promise<void>;
 
+    getAccountById(id: AccountId): Promise<Account | undefined>;
+
     loadAllTransactions(): Promise<Transaction[]>;
 
     saveTransaction(transaction: Transaction): Promise<void>;
+
+    getTransactionById(id: TransactionId): Promise<Transaction | undefined>;
 
     loadAllCategories(): Promise<Category[]>;
 
     saveCategory(category: Category): Promise<void>;
 
+    getCategoryById(id: CategoryId): Promise<Category | undefined>;
+
     loadAllBudgets(): Promise<Budget[]>;
 
     saveBudget(budget: Budget): Promise<void>;
 
+    getBudgetById(id: BudgetId): Promise<Budget | undefined>;
+
     loadAllGoals(): Promise<Goal[]>;
 
     saveGoal(goal: Goal): Promise<void>;
+
+    getGoalById(id: GoalId): Promise<Goal | undefined>;
 
     loadCurrencyConfigs(): Promise<CurrencyConfig[]>;
 
