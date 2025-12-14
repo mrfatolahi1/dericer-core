@@ -109,3 +109,9 @@ export interface BudgetStatusDTO {
     remainingMinor: number;
     percentUsed: number;
 }
+
+export interface AccountBalanceDTO {
+    accountId: AccountId;
+    currency: CurrencyCode;
+    balanceMinor: number;
+}
