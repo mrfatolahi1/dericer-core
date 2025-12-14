@@ -13,3 +13,4 @@ export * from "./ports/time-port.js";
 export * from "./ports/storage-port.js";
 
 export * from "./api/types.js";
+export * from "./api/core.js";
