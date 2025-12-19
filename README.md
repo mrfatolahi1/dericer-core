@@ -305,21 +305,6 @@ The exact setup is up to you, but the architecture is designed so that:
 
 ---
 
-## 📜 License
-
-Dericer is intended to be open source.  
-You can choose any license you like (MIT, Apache-2.0, GPL, …).  
-Example (MIT):
-
-```text
-MIT License
-Copyright (c) 2025 Dericer
-```
-
-(Please add a real `LICENSE` file at the root of the project.)
-
----
-
 ## 💬 Contributing / Ideas
 
 - Add more advanced reports (cashflow, monthly charts, etc.).
