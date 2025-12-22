@@ -7,6 +7,12 @@
 
 ---
 
+## NPM Install:
+
+```shell
+npm install dericer-core
+```
+
 ## ✨ Features (Core)
 
 - **Local-first, single user**
