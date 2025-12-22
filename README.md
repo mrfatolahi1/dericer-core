@@ -7,7 +7,7 @@
 
 ---
 
-## NPM Install:
+## ✅ NPM Install
 
 ```shell
 npm install dericer-core
